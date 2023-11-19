@@ -11,6 +11,7 @@
         body {
             background-color: #fff;
             color: #000;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         body.dark-mode {
@@ -37,11 +38,15 @@
             .then(response => response.text())
             .then(markdown => {
                 // Convert Markdown to HTML using Markdown-it
-                const md = window.markdownit();
-                const html = md.render(markdown);
+                if (typeof window.markdownit === 'function') {
+                    const md = window.markdownit();
+                    const html = md.render(markdown);
 
-                // Display the HTML in the container
-                document.getElementById('readme-container').innerHTML = html;
+                    // Display the HTML in the container
+                    document.getElementById('readme-container').innerHTML = html;
+                } else {
+                    console.error('Markdown-it library is not loaded.');
+                }
             })
             .catch(error => {
                 console.error('Error fetching README.md:', error);
