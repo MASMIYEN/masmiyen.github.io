@@ -22,7 +22,7 @@
         /* Add more styles for dark mode as needed */
     </style>
 
-    <script src="https://cdn.jsdelivr.net/npm/markdown-it@12"></script>
+
 </head>
 <body>
     <div id="readme-container"></div>
@@ -33,24 +33,20 @@
             document.body.classList.toggle('dark-mode');
         }
 
-        // Fetch the README.md file
-        fetch('README.md')
-            .then(response => response.text())
-            .then(markdown => {
-                // Convert Markdown to HTML using Markdown-it
-                if (typeof window.markdownit === 'function') {
-                    const md = window.markdownit();
-                    const html = md.render(markdown);
-
-                    // Display the HTML in the container
-                    document.getElementById('readme-container').innerHTML = html;
-                } else {
-                    console.error('Markdown-it library is not loaded.');
-                }
-            })
-            .catch(error => {
-                console.error('Error fetching README.md:', error);
-            });
+<textarea id="text-input" oninput="this.editor.update()"
+              rows="6" cols="60">Insert proxied **Markdown** here.</textarea>
+    <div id="preview"> </div>
+    <script src="lib/markdown.js"></script>
+    <script>
+      function Editor(input, preview) {
+        this.update = function () {
+          preview.innerHTML = markdown.toHTML(input.value);
+        };
+        input.editor = this;
+        this.update();
+      }
+      var $ = function (id) { return document.getElementById(id); };
+      new Editor($("text-input"), $("preview"));
     </script>
 </body>
 </html>
