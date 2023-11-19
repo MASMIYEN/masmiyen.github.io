@@ -4,14 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/icon.png" type="image/png">
-    <title>AirBnB clone - Web static {by = MASMIYEN}</title>
+    <title>AirBnB clone - Web static {by} = "MASMIYEN"</title>
   
+    <!-- Include the dark mode styles -->
+    <style>
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Add more styles for dark mode as needed */
+    </style>
+
     <script src="https://cdn.jsdelivr.net/npm/markdown-it@12"></script>
 </head>
 <body>
     <div id="readme-container"></div>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
 
     <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+
         // Fetch the README.md file
         fetch('README.md')
             .then(response => response.text())
