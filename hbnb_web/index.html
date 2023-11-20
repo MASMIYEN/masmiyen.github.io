@@ -1,121 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/icon.png" type="image/png">
-    <title>AirBnB clone - Web static {by = MASMIYEN}</title>
-  
-    <!-- Include the dark mode styles initially -->
-    <style>
-        body {
-            background-color: #fff;
-            color: #000;
-            transition: background-color 0.3s, color 0.3s;
-            margin: 20px;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/icon.png" type="image/png">
+  <title>AirBnB clone - Web static {by = MASMIYEN}</title>
 
-        body.dark-mode {
-            background-color: #333;
-            color: #fff;
-        }
+  <style>
+   body {
+       background-color: #282a36; /* Dracula background color */
+       color: #f8f8f2; /* Dracula text color */
+       margin: 20px;
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       font-family: 'Fira Code', monospace; /* Dracula font */
+       font-size: 20px;
+   }
 
-        /* Add more styles for dark mode as needed */
-    </style>
+   p {
+       text-align: left;
+       line-height: 1.6;
+       color: #f8f8f2; /* Dracula text color */
+   }
 
-    <script src="https://cdn.jsdelivr.net/npm/markdown-it@12"></script>
+   h1, h2, h3, h4, h5, h6 {
+       color: #FF5A5F; /* Dracula pink */
+   }
+
+      table {
+          border-collapse: collapse;
+          margin: 25px 0;
+          font-size: 0.9em;
+          font-family: sans-serif;
+          min-width: 400px;
+          box-shadow: 0 0 20px #2D9596;
+      }
+
+      table thead tr {
+          background-color: #009879;
+          color: #ffffff;
+          text-align: left;
+
+      }
+
+      table tr:nth-child(even) {
+          background-color: #2D9596;
+      }
+
+      table tr:hover {
+          background-color: #D6EEEE;
+      }
+
+      table th, table td {
+          border: 1px solid #ddd;
+          padding: 8px;
+      }
+  </style>
+
+  <script>
+
+  </script>
 </head>
 <body>
-    <div id="readme-container"></div>
-    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+<body>
 
-    <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle('dark-mode');
-        }
+    <p><a href="https://camo.githubusercontent.com/329b19ab3eab02cefff5862e1e75b7da929df5b20a69c05d1d526612156885af/68747470733a2f2f616365776f726c647075622e636f6d2e6e672f77702d636f6e74656e742f75706c6f6164732f323032322f30332f756e6e616d65642e706e67" rel="noopener noreferrer nofollow" target="_blank"><img src="https://camo.githubusercontent.com/329b19ab3eab02cefff5862e1e75b7da929df5b20a69c05d1d526612156885af/68747470733a2f2f616365776f726c647075622e636f6d2e6e672f77702d636f6e74656e742f75706c6f6164732f323032322f30332f756e6e616d65642e706e67" style="height:100px; width:200px" /></a><a href="https://github.com/MASMIYEN/masmiyen.github.io/blob/master/hbnb_web/images/logo.png?raw=true" rel="noopener noreferrer" target="_blank"><img src="https://github.com/MASMIYEN/masmiyen.github.io/raw/master/hbnb_web/images/logo.png?raw=true" style="height:100px; width:200px" /></a></p>
 
-        // Replace the content below with the actual content of your README.md
-        const readmeContent = `
-            
-<img src="https://aceworldpub.com.ng/wp-content/uploads/2022/03/unnamed.png" width="200" height="100"> 
-<img src="https://github.com/MASMIYEN/masmiyen.github.io/blob/master/hbnb_web/images/logo.png?raw=true" width="200" height="100"> 
+<p><a href="https://raw.githubusercontent.com/MASMIYEN/masmiyen/master/LONG-LOGO-MASMIYEN.gif" rel="noopener noreferrer nofollow" target="_blank"><img alt="" src="https://raw.githubusercontent.com/MASMIYEN/masmiyen/master/LONG-LOGO-MASMIYEN.gif" /></a></p>
 
-![](https://raw.githubusercontent.com/MASMIYEN/masmiyen/master/LONG-LOGO-MASMIYEN.gif)
+<h1>Project: 0x01. AirBnB clone - Web static</h1>
 
-# Project: 0x01. AirBnB clone - Web static
+<h3>In this page you get to see a sneak peek into how the project looks like when It&#39;s done</h3>
 
-### In this Page you get to see a sneak peek into how the project looks like when Its done
-### And I'll appreciate if you manual review my project by clicking [here](Ready%20for%20manual%20review%20Now%20that%20you%20are%20ready%20to%20be%20reviewed,%20share%20your%20link%20to%20your%20peers.%20You%20can%20find%20some%20here.%20%20https://intranet.alxswe.com/corrections/20973345/correct) 
- 
+<h3>And I&#39;d appreciate if you manually review my project by clicking <a href="https://intranet.alxswe.com/corrections/20973345/correct">Manual Review this project</a></h3>
 
-## Resources
+<h2>Resources</h2>
 
-#### Read or watch:
+<h4>Read or watch:</h4>
 
-* [Learn to Code HTML & CSS](https://intranet.alxswe.com/rltoken/T9KyiA6_Tm3Ny6oTn08S-A)
-* [Inline Styles in HTML](https://intranet.alxswe.com/rltoken/7NdYbImFNofpB_FXXn3otg)
-* [Specifics on CSS Specificity](https://intranet.alxswe.com/rltoken/z_OTPFCjmhXJJi7KJqBCbQ)
-* [CSS SpeciFishity](https://intranet.alxswe.com/rltoken/orI812cozq-yd2769VdM_w)
-* [Introduction to HTML](https://intranet.alxswe.com/rltoken/okP4V3RxFXHkEcQo19AnuQ)
-* [CSS](https://intranet.alxswe.com/rltoken/Ir8Ka59FO6Z_vJQ-gkSG_w)
-* [MDN](https://intranet.alxswe.com/rltoken/BpSXtcWOGH0UT4XLCoQyJg)
-* [center boxes](https://intranet.alxswe.com/rltoken/Tlje4XYwyZbUfHkQWGi1WQ)
+<ul>
+	<li><a href="https://intranet.alxswe.com/rltoken/T9KyiA6_Tm3Ny6oTn08S-A" rel="nofollow">Learn to Code HTML &amp; CSS</a></li>
+	<li><a href="https://intranet.alxswe.com/rltoken/7NdYbImFNofpB_FXXn3otg" rel="nofollow">Inline Styles in HTML</a></li>
+	<li><a href="https://intranet.alxswe.com/rltoken/z_OTPFCjmhXJJi7KJqBCbQ" rel="nofollow">Specifics on CSS Specificity</a></li>
+	<li><a href="https://intranet.alxswe.com/rltoken/orI812cozq-yd2769VdM_w" rel="nofollow">CSS SpeciFishity</a></li>
+	<li><a href="https://intranet.alxswe.com/rltoken/okP4V3RxFXHkEcQo19AnuQ" rel="nofollow">Introduction to HTML</a></li>
+	<li><a href="https://intranet.alxswe.com/rltoken/Ir8Ka59FO6Z_vJQ-gkSG_w" rel="nofollow">CSS</a></li>
+	<li><a href="https://intranet.alxswe.com/rltoken/BpSXtcWOGH0UT4XLCoQyJg" rel="nofollow">MDN</a></li>
+	<li><a href="https://intranet.alxswe.com/rltoken/Tlje4XYwyZbUfHkQWGi1WQ" rel="nofollow">center boxes</a></li>
+</ul>
 
-## Learning Objectives
+<h2>Learning Objectives</h2>
 
-### General
+<h3>General</h3>
 
-* What is HTML
-* How to create an HTML page
-* What is a markup language
-* What is the DOM
-* What is an element / tag
-* What is an attribute
-* How does the browser load a webpage
-* What is CSS
-* How to add style to an element
-* What is a class
-* What is a selector
-* How to compute CSS Specificity Value
-* What are Box properties in CSS
-* 
-## Tasks
-### each link will redirect you do the output of the html pages, If you want to see the source codes
-### you can check my repository by clicking [here](https://github.com/MASMIYEN/AirBnB_clone/tree/main/web_static) 
+<ul>
+	<li>What is HTML</li>
+	<li>How to create an HTML page</li>
+	<li>What is a markup language</li>
+	<li>What is the DOM</li>
+	<li>What is an element/tag</li>
+	<li>What is an attribute</li>
+	<li>How does the browser load a webpage</li>
+	<li>What is CSS</li>
+	<li>How to add style to an element</li>
+	<li>What is a class</li>
+	<li>What is a selector</li>
+	<li>How to compute CSS Specificity Value</li>
+	<li>What are Box properties in CSS</li>
+	<li>&nbsp;</li>
+</ul>
 
-| Task | File |
-| ---- | ---- |
-| 0. Inline styling | [0-index.html](https://masmiyen.dev/hbnb_web/0-index.html) |
-| 1. Head styling | [1-index.html](https://masmiyen.dev/hbnb_web/1-index.html) |
-| 2. CSS files | [2-index.html](https://masmiyen.dev/hbnb_web/2-index.html)|
-| 3. Zoning done! | [3-index.html](https://masmiyen.dev/hbnb_web/3-index.html)
-| 4. Search! | [4-index.html](https://masmiyen.dev/hbnb_web/4-index.html)|
-| 5. More filters | [5-index.html](https://masmiyen.dev/hbnb_web/5-index.html) |
-| 6. It's (h)over | [6-index.html](https://masmiyen.dev/hbnb_web/6-index.html) |
-| 7. Display results | [7-index.html](https://masmiyen.dev/hbnb_web/7-index.html) |
-| 8. More details | [8-index.html](https://masmiyen.dev/hbnb_web/8-index.html) |
-| 9. Full details | [100-index.html](https://masmiyen.dev/hbnb_web/100-index.html) |
-| 10. Flex | [101-index.html](https://masmiyen.dev/hbnb_web/101-index.html) |
-| 11. Responsive design | [102-index.html](https://masmiyen.dev/hbnb_web/102-index.html) |
-| 12. Accessibility | [103-index.html](https://masmiyen.dev/hbnb_web/103-index.html) |
+<h2>Tasks</h2>
 
+<h3>each link will redirect you to the output of the HTML pages, If you want to see the source codes</h3>
 
+<h3>you can check my repository by clicking&nbsp;<a href="https://github.com/MASMIYEN/AirBnB_clone/tree/main/web_static">here</a></h3>
 
+<table>
+	<thead>
+		<tr>
+			<th><strong>Task</strong></th>
+			<th><strong>File</strong></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>0. Inline styling</td>
+			<td><a href="https://masmiyen.dev/hbnb_web/0-index.html" rel="nofollow">0-index.html</a></td>
+		</tr>
+		<tr>
+			<td>1. Head styling</td>
+			<td><a href="https://masmiyen.dev/hbnb_web/1-index.html" rel="nofollow">1-index.html</a></td>
+		</tr>
+		<tr>
+			<td>2. CSS files</td>
+			<td><a href="https://masmiyen.dev/hbnb_web/2-index.html" rel="nofollow">2-index.html</a></td>
+		</tr>
+		<tr>
+			<td>3. Zoning done!</td>
+			<td><a href="https://masmiyen.dev/hbnb_web/3-index.html" rel="nofollow">3-index.html</a></td>
+		</tr>
+		<tr>
+			<td>4. Search!</td>
+			<td><a href="https://masmiyen.dev/hbnb_web/4-index.html" rel="nofollow">4-index.html</a></td>
+		</tr>
+		<tr>
+			<td>5. More filters</td>
+			<td><a href="https://masmiyen.dev/hbnb_web/5-index.html" rel="nofollow">5-index.html</a></td>
+		</tr>
+		<tr>
+			<td>6. It&#39;s (h)over</td>
+			<td><a href="https://masmiyen.dev/hbnb_web/6-index.html" rel="nofollow">6-index.html</a></td>
+		</tr>
+		<tr>
+			<td>7. Display results</td>
+			<td><a href="https://masmiyen.dev/hbnb_web/7-index.html" rel="nofollow">7-index.html</a></td>
+		</tr>
+		<tr>
+			<td>8. More details</td>
+			<td><a href="https://masmiyen.dev/hbnb_web/8-index.html" rel="nofollow">8-index.html</a></td>
+		</tr>
+		<tr>
+			<td>9. Full details</td>
+			<td><a href="https://masmiyen.dev/hbnb_web/100-index.html" rel="nofollow">100-index.html</a></td>
+		</tr>
+		<tr>
+			<td>10. Flex</td>
+			<td><a href="https://masmiyen.dev/hbnb_web/101-index.html" rel="nofollow">101-index.html</a></td>
+		</tr>
+		<tr>
+			<td>11. Responsive design</td>
+			<td><a href="https://masmiyen.dev/hbnb_web/102-index.html" rel="nofollow">102-index.html</a></td>
+		</tr>
+		<tr>
+			<td>12. Accessibility</td>
+			<td><a href="https://masmiyen.dev/hbnb_web/103-index.html" rel="nofollow">103-index.html</a></td>
+		</tr>
+	</tbody>
+</table>
 
-
-
-        `;
-
-        // Convert Markdown to HTML using Markdown-it
-        if (typeof window.markdownit === 'function') {
-            const md = window.markdownit();
-            const html = md.render(readmeContent);
-
-            // Display the HTML in the container
-            document.getElementById('readme-container').innerHTML = html;
-        } else {
-            console.error('Markdown-it library is not loaded.');
-        }
-    </script>
 </body>
 </html>
